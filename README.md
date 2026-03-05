@@ -42,4 +42,4 @@ Smart Sahayak is a revolutionary self-service kiosk designed to streamline acces
 
 ---
 
-**Note:** This project adheres to a strict 'No-AI Core Logic' rule for mission-critical modules, focusing on local processing to ensure maximum security and privacy.
+**Note:** This project adheres to a strict prototype model work and only rules for mission-critical modules, focusing on local processing to ensure maximum security and privacy and backend driven software work only is taken in consideration. Hardware interactions are abstracted through the gateway layer & will be implemented in future version after prototype validation and success.
