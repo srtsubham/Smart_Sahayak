@@ -1,45 +1,45 @@
 # Smart Sahayak: AI-Driven Printing & Stationery Kiosk
 
-**Project Phase:** Initial Software Prototype (March 2026) [cite: 2026-03-02]
-[cite_start]**Seminar Code:** NCS4651 [cite: 3]
-[cite_start]**Developer:** Somya Ranjan Tripathi [cite: 5, 60]
+**Project Phase:** Initial Software Prototype (March 2026)
+**Seminar Code:** NCS4651
+**Developer:** Somya Ranjan Tripathi
 
 ---
 
 ## 🚀 Overview
 
-[cite_start]Smart Sahayak is a revolutionary self-service kiosk designed to streamline access to printing, document handling, and stationery supplies[cite: 1, 12]. This prototype focuses on the backend software architecture and AI pipeline required to manage user interaction and hardware triggers autonomously [cite: 24, 2026-03-02].
+Smart Sahayak is a revolutionary self-service kiosk designed to streamline access to printing, document handling, and stationery supplies. This prototype focuses on the backend software architecture and AI pipeline required to manage user interaction and hardware triggers autonomously.
 
 ## 🛠️ Core Features
 
-- **Dual-Layer Gateway**: Utilizes frame-differencing for motion detection combined with a 2FA human face verification layer [cite: 2026-03-02].
-- **Privacy-First Architecture**: Implements a volatile local cache system that executes a mandatory wipe command immediately upon new session detection [cite: 16, 2026-03-02].
-- **Speaking Interactive AI**: A standalone Python application integrating Speech-to-Text (STT) and Text-to-Speech (TTS) for seamless user prompts [cite: 2026-03-02].
-- **Operational Cooldown**: Includes a synchronized 5-second buffer between sessions to ensure stable state transitions [cite: 2026-03-02].
+- **Dual-Layer Gateway**: Utilizes frame-differencing for motion detection combined with a 2FA human face verification layer for secure session initialization.
+- **Privacy-First Architecture**: Implements a volatile local cache system that executes a mandatory wipe command immediately upon new session detection to ensure data sovereignty.
+- **Speaking Interactive AI**: A standalone Python application integrating Speech-to-Text (STT) and Text-to-Speech (TTS) for seamless, hands-free user prompts.
+- **Operational Cooldown**: Includes a synchronized 5-second buffer between sessions to ensure stable state transitions and prevent rapid re-triggering.
 
 ## 📂 Project Structure
 
-- `src/main.py`: The central orchestrator managing the system lifecycle [cite: 2026-03-02].
-- `src/gateway.py`: Handles hardware initialization, face detection, and 2FA [cite: 2026-03-02].
-- `src/interaction.py`: Manages the cognitive AI layer and speech processing [cite: 2026-03-02].
-- `database/`: Local storage for session logs and inventory records [cite: 2026-03-02].
-- `models/`: Repository for lightweight machine learning models (Haar Cascades, etc.) [cite: 2026-03-02].
-- `doc/`: Project Manifestos and documentation [cite: 2026-03-02].
+- `src/main.py`: The central orchestrator managing the system lifecycle and cooldown logic.
+- `src/gateway.py`: Handles hardware initialization, computer vision for face detection, and the 2FA trigger.
+- `src/interaction.py`: Manages the cognitive AI layer, processing voice prompts and user intent.
+- `database/`: Local storage for session logs and stationery inventory records.
+- `models/`: Repository for lightweight machine learning models and classifiers.
+- `doc/`: Project Manifestos, blueprints, and academic documentation.
 
 ## ⚙️ Setup & Installation
 
-1.  **Requirement**: Python 3.12 (Stable) [cite: 2026-03-02].
+1.  **Requirement**: Python 3.12 (Stable)
 2.  **Environment Setup**:
-    ```bash
+    ```powershell
     python -m venv venv
     .\venv\Scripts\activate
     pip install -r requirements.txt
     ```
 3.  **Execution**:
-    ```bash
+    ```powershell
     python src/main.py
     ```
 
 ---
 
-**Note:** This project adheres to a strict 'No-AI Core Logic' rule for Hyper Project modules where applicable, focusing on local processing to ensure data sovereignty [cite: 2026-02-27, 2026-03-02].
+**Note:** This project adheres to a strict 'No-AI Core Logic' rule for mission-critical modules, focusing on local processing to ensure maximum security and privacy.
