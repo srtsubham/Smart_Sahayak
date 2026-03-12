@@ -29,7 +29,6 @@ def m():
     while True:
         r, f_m = c.read()
 
-        # FIX: Check if frame is valid before processing
         if not r or f_m is None:
             cv2.waitKey(10)
             continue
@@ -57,7 +56,7 @@ def m():
             if len(v) > 0:
                 p()
                 s("How may I help you")
-                return True  # Signal main.py to start interaction
+                return True
 
         cv2.imshow("Smart Sahayak - Gateway", f_m)
         if cv2.waitKey(1) == ord("q"):
