@@ -55,7 +55,7 @@ def m():
             v = f.detectMultiScale(g, 1.1, 4)
             if len(v) > 0:
                 p()
-                s("How may I help you")
+                s("Hello there, How may I help you?")
                 return True
 
         cv2.imshow("Smart Sahayak - Gateway", f_m)
