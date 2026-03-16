@@ -27,7 +27,7 @@ def i():
     elif "pen" in u or "stationery" in u:
         t("Accessing stationery dispenser")
     else:
-        t("I did not catch that. Could you repeat")
+        t("Invalid Input! Please try again.")
 
 
 if __name__ == "__main__":
