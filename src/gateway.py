@@ -58,7 +58,7 @@ def m():
                 s("Hello there, How may I help you?")
                 return True
 
-        cv2.imshow("Smart Sahayak - Gateway", f_m)
+        cv2.imshow("Smart Sahayak - Main Portal", f_m)
         if cv2.waitKey(1) == ord("q"):
             break
 
