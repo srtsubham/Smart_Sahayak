@@ -6,7 +6,7 @@ def s():
     print("System Initialized. Monitoring for presence...")
     while True:
         if g.m():
-            print("User verification complete. Starting interaction...")
+            print("User verification complete. Starting interactive mode...")
             i.i()
             print("Session ended. Returning to monitor mode.")
 
