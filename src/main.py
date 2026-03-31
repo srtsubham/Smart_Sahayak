@@ -8,7 +8,7 @@ def s():
         if g.m():
             print("User verification complete. Starting interactive mode...")
             i.i()
-            print("Session ended. Returning to monitor mode.")
+            print("Session ended. Returning to Idle State.")
 
 
 if __name__ == "__main__":
