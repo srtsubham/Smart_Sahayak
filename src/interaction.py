@@ -23,7 +23,7 @@ def l():
 def i():
     u = l()
     if "print" in u:
-        t("Heres your black and white, colour prints along with binidngs too")
+        t("Heres your prints along with binidngs too (/If applied)")
     elif "pen" in u or "stationery" in u:
         t("Accessing stationery dispenser")
     else:
