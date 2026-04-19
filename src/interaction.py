@@ -23,7 +23,7 @@ def l():
 def i():
     u = l()
     if "print" in u:
-        t("Here's your prints along with binidngs too (/If applied)")
+        t("Here's your prints (along with binidngs too) (/If applied)")
     elif "pen" in u or "stationery" in u:
         t("Accessing stationery dispenser")
     else:
